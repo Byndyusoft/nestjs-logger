@@ -1,0 +1,15 @@
+{
+  "root": true,
+  "extends": ["@byndyusoft/eslint-config/header-apache-2.0", "@byndyusoft/eslint-config/backend"],
+  "overrides": [
+    {
+      "files": ["*.ts"],
+      "rules": {
+        // @typescript-eslint/eslint-plugin Supported Rules
+        "@typescript-eslint/no-non-null-assertion": "off", // type hacks
+        "header/header": "off",
+        "@typescript-eslint/no-unsafe-assignment": "off"
+      }
+    }
+  ]
+}
